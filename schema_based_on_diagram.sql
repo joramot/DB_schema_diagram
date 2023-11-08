@@ -35,9 +35,6 @@ CREATE TABLE treatments (
     PRIMARY KEY (id)
 );
 
-CREATE INDEX idx_medical_histories_treatments_medical_histories_id ON medical_histories_treatments (medical_histories_id);
-CREATE INDEX idx_medical_histories_treatments_treatments_id ON medical_histories_treatments (treatments_id);
-
 CREATE TABLE invoice_items (
     id INT GENERATED ALWAYS AS IDENTITY,
     unit_price REAL,
@@ -50,5 +47,17 @@ CREATE TABLE invoice_items (
     FOREIGN KEY (treatment_id) REFERENCES treatments(id)
 );
 
-CREATE INDEX idx_invoices_invoce_id ON invoice_items (invoce_id);
-CREATE INDEX idx_invoices_treatment_id ON invoice_items (treatment_id);
+CREATE INDEX idx_invoices_items_invoce_id ON invoice_items (invoce_id);
+CREATE INDEX idx_invoices_items_treatment_id ON invoice_items (treatment_id);
+
+CREATE TABLE medical_histories_treatments (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    medical_histories_id INT,
+    treatments_id INT,
+    PRIMARY KEY (id),
+    FOREIGN KEY (medical_histories_id) REFERENCES medical_histories(id),
+    FOREIGN KEY (treatments_id) REFERENCES treatments(id)
+);
+
+CREATE INDEX idx_medical_histories_treatments_medical_histories_id ON medical_histories_treatments (medical_histories_id);
+CREATE INDEX idx_medical_histories_treatments_treatments_id ON medical_histories_treatments (treatments_id);

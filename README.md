@@ -19,9 +19,9 @@
 
 # 📖 [Clinic Database] <a name="about-project"></a>
 *Clinic* is a relational database which helps us to keep records of patients that have received treatments and paid the invoices.
+This database is the foundation for analyzing data and create strategies for our marketing purposes.
 We get a database diagram, interpret it, and implement the SQL needed to build that database.
 <br/>
-
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -38,7 +38,6 @@ We get a database diagram, interpret it, and implement the SQL needed to build t
 - **[Create a database named clinic]**
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
@@ -50,7 +49,6 @@ In order to run this project you need:
 ```sh
  gem Postgres
 ```
-
 ### Setup
 
 Clone this repository to your desired folder:
@@ -60,7 +58,6 @@ Clone this repository to your desired folder:
   cd my-folder
   git clone git@github.com/joramot/DB_schema_diagram.git
 ```
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
@@ -90,6 +87,8 @@ Clone this repository to your desired folder:
 
 - [ ] **[User authentication]**
 - [ ] **[Appointment scheduling]**
+- [ ] **[Favorite Patients Section]**
+- [ ] **[Advices for patients Section]**
   
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
