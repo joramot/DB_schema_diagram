@@ -18,7 +18,7 @@ CREATE INDEX idx_medical_histories_patient_id ON medical_histories (patient_id);
 
 CREATE TABLE invoices (
     id INT GENERATED ALWAYS AS IDENTITY,
-    total_amount REAL,
+    total_amount NUMERIC(10, 2),
     generated_at TIMESTAMP,
     payed_at TIMESTAMP,
     medical_history_id INT,
@@ -37,9 +37,9 @@ CREATE TABLE treatments (
 
 CREATE TABLE invoice_items (
     id INT GENERATED ALWAYS AS IDENTITY,
-    unit_price REAL,
+    unit_price NUMERIC(10, 2),
     quantity INT,
-    total_price REAL,
+    total_price NUMERIC(10, 2),
     invoce_id INT,
     treatment_id INT,
     PRIMARY KEY (id),
