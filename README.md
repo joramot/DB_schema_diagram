@@ -19,6 +19,7 @@
 
 # 📖 [Clinic Database] <a name="about-project"></a>
 *Clinic* is a relational database which helps us to keep records of patients that have received treatments and paid the invoices.
+This database is the foundation for analyzing data and create strategies for our marketing purposes.
 We get a database diagram, interpret it, and implement the SQL needed to build that database.
 <br/>
 ## 🛠 Built With <a name="built-with"></a>
@@ -86,6 +87,8 @@ Clone this repository to your desired folder:
 
 - [ ] **[User authentication]**
 - [ ] **[Appointment scheduling]**
+- [ ] **[Favorite Patients Section]**
+- [ ] **[Advices for patients Section]**
   
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
