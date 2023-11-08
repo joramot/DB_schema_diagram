@@ -1,3 +1,4 @@
+
 CREATE TABLE patiens (
     id INT GENERATED ALWAYS AS IDENTITY,
     name VARCHAR(100),
@@ -48,7 +49,6 @@ CREATE TABLE treatments (
     name VARCHAR(100),
     PRIMARY KEY (id)
 );
-
 CREATE TABLE medical_histories_treatments (
     id INT GENERATED ALWAYS AS IDENTITY,
     medical_histories_id INT,
